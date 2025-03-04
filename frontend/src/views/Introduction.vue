@@ -113,7 +113,7 @@
   line-height: 1.6;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .intro-container {
     display: block;
     align-items: center;
