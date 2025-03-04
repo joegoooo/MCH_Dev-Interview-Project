@@ -9,9 +9,9 @@
         <div class="intro-text">
           <h2>自我介紹</h2>
           <p>
-            我是黃奕淇，交大資工大一生。興趣是打打羽球、追追動漫（最近推青之驅魔師）。
+            我是黃奕淇，交大資工大一生。興趣是打打羽球、追追動漫（最近推青之驅魔師）。<br>
             高中時除了自學C++外，還有自學Python跟Pygame。
-            高二時有稍微接觸過網頁前端相關知識(HTML等)。
+            高二時有稍微接觸過網頁前端相關知識(HTML等)。<br>
             希望能加入開發部的行列，學習更深的開發知識，一起完成專案！
           </p>
 
@@ -117,7 +117,12 @@
   .intro-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 40px;
+  }
+  .selfie {
+    width: 150px;
+    height: 150px;
   }
 }
 
