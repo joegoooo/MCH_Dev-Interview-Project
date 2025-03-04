@@ -113,18 +113,11 @@
   line-height: 1.6;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .intro-container {
-    display: block;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
-  }
-
-  .selfie {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
   }
 }
 
