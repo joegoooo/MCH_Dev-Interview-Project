@@ -23,9 +23,9 @@
     <section class="about-section">
       <h3>個人資訊補充</h3>
       <ul>
-        <li>好棒棒1</li>
-        <li>好棒棒2</li>
-        <li>好棒棒3</li>
+        <li>我會盡量將負責的任務如期完成，不會拖過死線</li>
+        <li>我對學習開發知識充滿熱忱</li>
+        <li>我好菜</li>
       </ul>
       
     </section>
@@ -57,14 +57,14 @@
 
 .intro-header {
   background-color: #fafafa;
-  padding: 40px;
+  padding: 50px;
   border-radius: 30px;
 }
 
 .intro-container {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .selfie {
@@ -75,12 +75,12 @@
 }
 
 .intro-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: 20px;
 }
 
 .intro-text p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
@@ -108,8 +108,8 @@
   margin-bottom: 10px;
 }
 
-.about-section p {
-  font-size: 1.5rem;
+.about-section li {
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -119,6 +119,7 @@
     align-items: center;
     text-align: center;
     gap: 40px;
+    line-height: 1.6;
   }
   .selfie {
     width: 150px;
