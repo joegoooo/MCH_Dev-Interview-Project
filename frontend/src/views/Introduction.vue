@@ -46,6 +46,8 @@
        url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
 }
 
+
+
 .introduction {
   font-family: 'cwTeXFangSong';
   padding: 40px 20px;
@@ -109,6 +111,21 @@
 .about-section p {
   font-size: 1.5rem;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 576px) {
+  .intro-container {
+    display: block;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .selfie {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
 }
 
 </style>
