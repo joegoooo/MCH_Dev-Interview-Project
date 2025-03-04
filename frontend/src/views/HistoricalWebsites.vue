@@ -1,4 +1,5 @@
 <template>
+  
   <div class="historical-websites">
     <h2>歷年梅竹黑客松網站</h2>
     <div class="websites-grid">
@@ -6,14 +7,12 @@
         <img
           :src="website.image_url"
           :alt="website.name"
-          class="website-image"
+          class="website-image" 
         />
         <div class="website-info">
           <h3>{{ website.name }}</h3>
           <p>{{ website.description }}</p>
-          <a :href="website.link" target="_blank" class="view-button"
-            >查看網站</a
-          >
+          <a :href="website.link" target="_blank" class="view-button">查看網站</a>
         </div>
       </div>
     </div>
@@ -22,6 +21,29 @@
 
 <script>
 // TODO: Fetch websites data from API
+  import axios from "axios"
+  export default {
+    name: "HistoricalWebsites",
+    
+    data() {
+      return {
+        websites: [],
+      };
+    },
+    mounted() {
+      axios
+        .get("https://mch-dev.userwei.com/api/websites")
+        .then((response) => {
+          this.websites = response.data;
+          console.log(this.websites);
+        })
+        .catch((error) => {
+          console.error("Error fetching websites data:", error);
+        });
+    },
+    
+  };
+
 </script>
 
 <style scoped>
@@ -40,6 +62,10 @@
 
 .websites-grid {
   /* TODO: Add styles for a responsive grid layout */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .website-card {
@@ -55,9 +81,10 @@
 }
 
 .website-image {
+  margin: 10px auto;
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .website-info {
